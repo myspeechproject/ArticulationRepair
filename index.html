@@ -40,7 +40,7 @@
         }
     </script>
 
-    <h3> Part 1. Audio samples of held-out original recordings and the resynthesized speech by different systems.</h3>
+    <h3> Part 1. Audio samples of held-out original recordings and the corresponding synthesized speech by different systems.</h3>
 
     <table>
         <tr>
@@ -50,80 +50,9 @@
             <th>Duritaco+VC</th>
             <th>Duritaco+AugRecLoss</th>
         </tr>
-        <tr>
-            <td>"你大二嗰陣唔係去過交流咩"<br>"nei5 daai6 ji6 go2 zan6 m4 hai6 heoi3 gwo3 gaau1 lau4 me1"</td>
-            <td><audio id='M1_ori' style='display:none'>
-                    <source src="audio_samples/MOStest/rec_S6.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M1_ori').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M1_ori'))">Stop</button>
-                </div>
-            </td>
-            <td><audio id='M1_duritaco' style='display:none'>
-                    <source src="audio_samples/MOStest/duritaco_S6.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M1_duritaco').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M1_duritaco'))">Stop</button>
-                </div>
-            </td>
-            <td><audio id='M1_vc' style='display:none'>
-                    <source src="audio_samples/MOStest/vc_S6.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M1_vc').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M1_vc'))">Stop</button>
-                </div>
-            </td>
-            <td><audio id='M1_augloss' style='display:none'>
-                    <source src="audio_samples/MOStest/duritaco_asr_loss_S6.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M1_augloss').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M1_augloss'))">Stop</button>
-                </div>
-            </td>
-        </tr>
 
         <tr>
-            <td>"你唔知佢哋幫你搞咗個慶功宴咩"<br>"nei5 m4 zi1 keoi5 dei2 bong1 nei5 gaau2 zo2 go3 hing3 gung1 jin3 me1"</td>
-            <td><audio id='M2_ori' style='display:none'>
-                    <source src="audio_samples/MOStest/rec_S277.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M2_ori').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M2_ori'))">Stop</button>
-                </div>
-            </td>
-            <td><audio id='M2_duritaco' style='display:none'>
-                    <source src="audio_samples/MOStest/duritaco_S277.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M2_duritaco').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M2_duritaco'))">Stop</button>
-                </div>
-            </td>
-            <td><audio id='M2_vc' style='display:none'>
-                    <source src="audio_samples/MOStest/vc_S277.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M2_vc').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M2_vc'))">Stop</button>
-                </div>
-            </td>
-            <td><audio id='M2_augloss' style='display:none'>
-                    <source src="audio_samples/MOStest/duritaco_asr_loss_S277.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M2_augloss').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M2_augloss'))">Stop</button>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>"呢本書係教人點樣控制自己嘅脾氣"<br>"ne1 bun2 syu1 hai6 gaau3 jan4 dim2 joeng6 hung3 zai3 zi6 gei2 ge3 pei4 hei3"</td>
+            <td>"呢本書係教人點樣控制自己嘅脾氣"<br>("This book teaches people how to control temper.")<br>"ne1 bun2 syu1 hai6 gaau3 jan4 dim2 joeng6 hung3 zai3 zi6 gei2 ge3 pei4 hei3"</td>
             <td><audio id='M3_ori' style='display:none'>
                     <source src="audio_samples/MOStest/rec_S576.wav" type="audio/wav">
                 </audio>
@@ -159,7 +88,7 @@
         </tr>
 
         <tr>
-            <td>"你做人唔好成日都咁負面啦"<br>"nei5 zou6 jan4 m4 hou2 sing4 jat6 dou1 gam3 fu6 min2 laa1"</td>
+            <td>"你做人唔好成日都咁負面啦"<br>("Don't be so negative all the time.")<br>"nei5 zou6 jan4 m4 hou2 sing4 jat6 dou1 gam3 fu6 min2 laa1"</td>
             <td><audio id='M4_ori' style='display:none'>
                     <source src="audio_samples/MOStest/rec_S1162.wav" type="audio/wav">
                 </audio>
@@ -196,7 +125,7 @@
 
 
         <tr>
-            <td>"講得咁詳細有啲人可能會唔高興"<br>"gong2 dak1 gam3 coeng4 sai3 jau5 di1 jan4 ho2 nang4 wui3 m4 gou1 hing3"</td>
+            <td>"講得咁詳細有啲人可能會唔高興"<br>("Some people might be unhappy if you talk in such detail.")<br>"gong2 dak1 gam3 coeng4 sai3 jau5 di1 jan4 ho2 nang4 wui3 m4 gou1 hing3"</td>
             <td><audio id='M5_ori' style='display:none'>
                     <source src="audio_samples/MOStest/rec_S496.wav" type="audio/wav">
                 </audio>
@@ -231,13 +160,86 @@
             </td>
         </tr>
 
+        <tr>
+            <td>"你大二嗰陣唔係去過交流咩"<br>("Didn't you apply for the student exchange program in your sophomore year?")<br>"nei5 daai6
+                ji6 go2 zan6 m4 hai6 heoi3 gwo3 gaau1 lau4 me1"</td>
+            <td><audio id='M1_ori' style='display:none'>
+                    <source src="audio_samples/MOStest/rec_S6.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('M1_ori').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('M1_ori'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='M1_duritaco' style='display:none'>
+                    <source src="audio_samples/MOStest/duritaco_S6.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('M1_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('M1_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='M1_vc' style='display:none'>
+                    <source src="audio_samples/MOStest/vc_S6.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('M1_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('M1_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='M1_augloss' style='display:none'>
+                    <source src="audio_samples/MOStest/duritaco_asr_loss_S6.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('M1_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('M1_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>"你唔知佢哋幫你搞咗個慶功宴咩"<br>("You don't know that they've prepared a celebration party for you?")<br>"nei5 m4 zi1 keoi5
+                dei2 bong1 nei5 gaau2 zo2 go3 hing3 gung1 jin3 me1"</td>
+            <td><audio id='M2_ori' style='display:none'>
+                    <source src="audio_samples/MOStest/rec_S277.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('M2_ori').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('M2_ori'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='M2_duritaco' style='display:none'>
+                    <source src="audio_samples/MOStest/duritaco_S277.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('M2_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('M2_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='M2_vc' style='display:none'>
+                    <source src="audio_samples/MOStest/vc_S277.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('M2_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('M2_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='M2_augloss' style='display:none'>
+                    <source src="audio_samples/MOStest/duritaco_asr_loss_S277.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('M2_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('M2_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+
     
     
     </table>
 
-    <h3> Part 2. Audio samples synthesized by diffrent systems. The test sentences are prepared by the target speaker </h3>
-    
-    
+    <h3> Part 2. Speech samples synthesized by diffrent systems. The test sentences are prepared by the target speaker. </h3>
+
     <table>
         <tr>
             <th width="900px"></th>
@@ -275,7 +277,7 @@
         </tr>
 
         <tr>
-            <td>"讓我可以跨過一個又一個困難"<br>("Allowing me to overcome all the difficulties.")<br>"joeng6 ngo5 ho2 ji5 kwaa1 gwo3 jat1 go3 jau6 jat1 go3 kwan3 naan4"</td>
+            <td>"讓我可以跨過一個又一個困難"<br>("Help me to overcome the challenges all the way through.")<br>"joeng6 ngo5 ho2 ji5 kwaa1 gwo3 jat1 go3 jau6 jat1 go3 kwan3 naan4"</td>
             <td><audio id='D2_duritaco' style='display:none'>
                     <source src="audio_samples/ABtest/duritaco/T10.wav" type="audio/wav">
                 </audio>
@@ -332,7 +334,7 @@
         </tr>
 
         <tr>
-            <td>"我當時仲未知道自己要做咁大嘅手術"<br>("At that time, I was unaware that I would undergo such a major surgery")<br>"ngo5 dong1 si4 zung6 mei6 zi1 dou3 zi6 gei2 jiu3 zou6 gam3 daai6 ge3 sau2 seot6"</td>
+            <td>"我當時仲未知道自己要做咁大嘅手術"<br>("At that time, I was unaware that I would undergo such a major surgery.")<br>"ngo5 dong1 si4 zung6 mei6 zi1 dou3 zi6 gei2 jiu3 zou6 gam3 daai6 ge3 sau2 seot6"</td>
             <td><audio id='D4_duritaco' style='display:none'>
                     <source src="audio_samples/ABtest/duritaco/T20.wav" type="audio/wav">
                 </audio>
@@ -360,7 +362,7 @@
         </tr>
 
         <tr>
-            <td>"我哋在此感謝,曾愛心捐獻扶助我哋嘅人"<br>("We would like to express our gratitude to those who kindly helped and supported us")<br>"ngo5 dei2 zoi6 ci2 gam2 ze6 sil cang4 ngoi3 sam1 gyun1 hin3 fu4 zo6 ngo5 dei2 ge3 jan4"</td>
+            <td>"我哋在此感謝,曾愛心捐獻扶助我哋嘅人"<br>("We would like to express our gratitude to those who kindly helped and supported us.")<br>"ngo5 dei2 zoi6 ci2 gam2 ze6 sil cang4 ngoi3 sam1 gyun1 hin3 fu4 zo6 ngo5 dei2 ge3 jan4"</td>
             <td><audio id='D5_duritaco' style='display:none'>
                     <source src="audio_samples/ABtest/duritaco/T33.wav" type="audio/wav">
                 </audio>
@@ -477,7 +479,7 @@
         </tr>
 
         <tr>
-            <td>"可能你都同我一樣遇到人生好多唔同嘅困難,但聖經喺咁講嘅"<br>("Perhaps you, like me, have encountered many different difficulties in life, but the Bible says")<br>"ho2 nang4 nei5 dou1 tung4 ngo5 jat1 joeng6 jyu6 dou3 jan4 saang1 hou2 do1 m4 tung4 ge3 kwan3 naan4 sil,daan6 sing3 ging1
+            <td>"可能你都同我一樣遇到人生好多唔同嘅困難,但聖經喺咁講嘅"<br>("Perhaps you, like me, have encountered many difficulties in life, but the Bible says.")<br>"ho2 nang4 nei5 dou1 tung4 ngo5 jat1 joeng6 jyu6 dou3 jan4 saang1 hou2 do1 m4 tung4 ge3 kwan3 naan4 sil,daan6 sing3 ging1
             hai2 gam3 gong2 ge3"
             </td>
             <td><audio id='D9_duritaco' style='display:none'>
@@ -507,7 +509,7 @@
         </tr>
 
         <tr>
-            <td>"活得喜樂、積極，心靈滿足，完全唔似病人"<br>("Live happily, actively, and contentedly, not like a patient at all")<br>"wut6 dak1 hei2 lok6 sil zik1 gik6 sil sam1 ling4 mun5 zuk1 sil jyun4 cyun4 m4 ci5 beng6 jan4"
+            <td>"活得喜樂、積極，心靈滿足，完全唔似病人"<br>("Live happily, actively, and contentedly, not like a patient at all.")<br>"wut6 dak1 hei2 lok6 sil zik1 gik6 sil sam1 ling4 mun5 zuk1 sil jyun4 cyun4 m4 ci5 beng6 jan4"
             </td>
             <td><audio id='D10_duritaco' style='display:none'>
                     <source src="audio_samples/ABtest/duritaco/T69.wav" type="audio/wav">
@@ -536,7 +538,7 @@
         </tr>
 
         <tr>
-            <td>"願你今日都可以得著呢份無價嘅福樂"<br>("May you receive this priceless happiness today")<br>"jyun6 nei5 gam1 jat6 dou1 ho2 ji5 dak1 zoek6 ne1 fan6 mou4 gaa3 ge3 fuk1 lok6"
+            <td>"願你今日都可以得著呢份無價嘅福樂"<br>("May you receive this priceless happiness today.")<br>"jyun6 nei5 gam1 jat6 dou1 ho2 ji5 dak1 zoek6 ne1 fan6 mou4 gaa3 ge3 fuk1 lok6"
             </td>
             <td><audio id='D11_duritaco' style='display:none'>
                     <source src="audio_samples/ABtest/duritaco/T74.wav" type="audio/wav">
