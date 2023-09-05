@@ -47,7 +47,6 @@
             <th width="900px"></th>
             <th>Recording</th>
             <th>Duritaco</th>
-            <th>GuidedDiff[1]</th>
             <th>Duritaco+VC</th>
             <th>Duritaco+aug_rec_loss</th>
         </tr>
@@ -67,14 +66,6 @@
                 <div>
                     <button onclick="stopAllAudios(); document.getElementById('M1_duritaco').play()">Play</button>
                     <button onclick="stopAudio(document.getElementById('M1_duritaco'))">Stop</button>
-                </div>
-            </td>
-            <td><audio id='M1_diff' style='display:none'>
-                    <source src="audio_samples/MOStest/diff_S6.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M1_diff').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M1_diff'))">Stop</button>
                 </div>
             </td>
             <td><audio id='M1_vc' style='display:none'>
@@ -113,14 +104,6 @@
                     <button onclick="stopAudio(document.getElementById('M2_duritaco'))">Stop</button>
                 </div>
             </td>
-            <td><audio id='M2_diff' style='display:none'>
-                    <source src="audio_samples/MOStest/diff_S277.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M2_diff').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M2_diff'))">Stop</button>
-                </div>
-            </td>
             <td><audio id='M2_vc' style='display:none'>
                     <source src="audio_samples/MOStest/vc_S277.wav" type="audio/wav">
                 </audio>
@@ -157,14 +140,6 @@
                     <button onclick="stopAudio(document.getElementById('M3_duritaco'))">Stop</button>
                 </div>
             </td>
-            <td><audio id='M3_diff' style='display:none'>
-                    <source src="audio_samples/MOStest/diff_S576.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M3_diff').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M3_diff'))">Stop</button>
-                </div>
-            </td>
             <td><audio id='M3_vc' style='display:none'>
                     <source src="audio_samples/MOStest/vc_S576.wav" type="audio/wav">
                 </audio>
@@ -199,14 +174,6 @@
                 <div>
                     <button onclick="stopAllAudios(); document.getElementById('M4_duritaco').play()">Play</button>
                     <button onclick="stopAudio(document.getElementById('M4_duritaco'))">Stop</button>
-                </div>
-            </td>
-            <td><audio id='M4_diff' style='display:none'>
-                    <source src="audio_samples/MOStest/diff_S1162.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M4_diff').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M4_diff'))">Stop</button>
                 </div>
             </td>
             <td><audio id='M4_vc' style='display:none'>
@@ -246,14 +213,6 @@
                     <button onclick="stopAudio(document.getElementById('M5_duritaco'))">Stop</button>
                 </div>
             </td>
-            <td><audio id='M5_diff' style='display:none'>
-                    <source src="audio_samples/MOStest/diff_S496.wav" type="audio/wav">
-                </audio>
-                <div>
-                    <button onclick="stopAllAudios(); document.getElementById('M5_diff').play()">Play</button>
-                    <button onclick="stopAudio(document.getElementById('M5_diff'))">Stop</button>
-                </div>
-            </td>
             <td><audio id='M5_vc' style='display:none'>
                     <source src="audio_samples/MOStest/vc_S496.wav" type="audio/wav">
                 </audio>
@@ -276,7 +235,337 @@
     
     </table>
 
+    <h3> Part 2. Audio samples synthesized by diffrent systems. The test sentences are prepared by the target speaker </h3>
+    
+    
+    <table>
+        <tr>
+            <th width="900px"></th>
+            <th>Duritaco</th>
+            <th>Duritaco+VC</th>
+            <th>Duritaco+AugRecLoss</th>
+        </tr>
+        <tr>
+            <td>"我喺二零一七年患上第四期舌癌，當年做咗手術、電療同化療"<br>("I was diagnosed with stage IV tongue cancer in 2017. That year, I underwent surgery, radiation therapy, and
+            chemotherapy.")<br>"ngo5 hai2 ji6 ling4 jat1 cat1 nin4 waan6 soeng6 dai6 sei3 kei4 sit6 ngaam4 sil dong1 nin4 zou6 zo2 sau2 seot6 sil din6 liu4 tung4 faa3 liu4 sil"</td>
+            <td><audio id='D1_duritaco' style='display:none'>
+                    <source src="audio_samples/ABtest/duritaco/T3T4.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D1_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D1_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D1_vc' style='display:none'>
+                    <source src="audio_samples/ABtest/vc/T3T4.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D1_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D1_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D1_augloss' style='display:none'>
+                    <source src="audio_samples/ABtest/augloss/T3T4.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D1_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D1_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
 
+        <tr>
+            <td>"讓我可以跨過一個又一個困難"<br>("Allowing me to overcome all the difficulties.")<br>"joeng6 ngo5 ho2 ji5 kwaa1 gwo3 jat1 go3 jau6 jat1 go3 kwan3 naan4"</td>
+            <td><audio id='D2_duritaco' style='display:none'>
+                    <source src="audio_samples/ABtest/duritaco/T10.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D2_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D2_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D2_vc' style='display:none'>
+                    <source src="audio_samples/ABtest/vc/T10.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D2_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D2_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D2_augloss' style='display:none'>
+                    <source src="audio_samples/ABtest/augloss/T10.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D2_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D2_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>"手術切去聲帶，要重新適應不能說話的生活，亦都要適應如何進食等等"<br>("My vocal cord was removed by surgery. I need to adapt myself to the life without voice, and learn new ways of ingesting food.")<br>"sau2 seot6 cit3 heoi3 seng1 daai2 sil jiu3 cung4 san1 sik1 jing3 bat1 nang4 syut3 waa6 dik1 sang1 wut6 sil,jik6 dou1
+            jiu3 sik1 jing3 jyu4 ho4 zeon3 sik6 dang2 dang2"</td>
+            <td><audio id='D3_duritaco' style='display:none'>
+                    <source src="audio_samples/ABtest/duritaco/T13T14.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D3_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D3_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D3_vc' style='display:none'>
+                    <source src="audio_samples/ABtest/vc/T13T14.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D3_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D3_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D3_augloss' style='display:none'>
+                    <source src="audio_samples/ABtest/augloss/T13T14.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D3_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D3_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>"我當時仲未知道自己要做咁大嘅手術"<br>("At that time, I was unaware that I would undergo such a major surgery")<br>"ngo5 dong1 si4 zung6 mei6 zi1 dou3 zi6 gei2 jiu3 zou6 gam3 daai6 ge3 sau2 seot6"</td>
+            <td><audio id='D4_duritaco' style='display:none'>
+                    <source src="audio_samples/ABtest/duritaco/T20.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D4_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D4_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D4_vc' style='display:none'>
+                    <source src="audio_samples/ABtest/vc/T20.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D4_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D4_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D3_augloss' style='display:none'>
+                    <source src="audio_samples/ABtest/augloss/T20.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D4_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D4_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>"我哋在此感謝,曾愛心捐獻扶助我哋嘅人"<br>("We would like to express our gratitude to those who kindly helped and supported us")<br>"ngo5 dei2 zoi6 ci2 gam2 ze6 sil cang4 ngoi3 sam1 gyun1 hin3 fu4 zo6 ngo5 dei2 ge3 jan4"</td>
+            <td><audio id='D5_duritaco' style='display:none'>
+                    <source src="audio_samples/ABtest/duritaco/T33.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D5_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D5_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D5_vc' style='display:none'>
+                    <source src="audio_samples/ABtest/vc/T33.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D5_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D5_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D5_augloss' style='display:none'>
+                    <source src="audio_samples/ABtest/augloss/T33.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D5_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D5_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>"喺我手術後昏迷,醫生話佢行醫廿幾年都未遇過病人手術後咁嘅情況"<br>("I fell into a coma after the operation. The doctor said that over 20 years of practice he has
+            never encountered such a situation.")<br>"hai2 ngo5 sau2 seot6 hau6 fan1 mai4 sil,ji1 sang1 waa6 keoi5 haang4 ji1 jaa6 gei2 nin4 dou1 mei6 jyu6 gwo3 beng6 jan4
+            sau2 seot6 hau6 gam3 ge3 cing4 fong3"
+            </td>
+            <td><audio id='D6_duritaco' style='display:none'>
+                    <source src="audio_samples/ABtest/duritaco/T39T40.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D6_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D6_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D6_vc' style='display:none'>
+                    <source src="audio_samples/ABtest/vc/T39T40.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D6_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D6_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D6_augloss' style='display:none'>
+                    <source src="audio_samples/ABtest/augloss/T39T40.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D6_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D6_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>"而且佢話我嘅手術喺好複雜"<br>("And he said that my surgery was very complicated.")<br>"ji4 ce2 keoi5 waa6 ngo5 ge3 sau2 seot6 hai2 hou2 fuk1 zaap6"
+            </td>
+            <td><audio id='D7_duritaco' style='display:none'>
+                    <source src="audio_samples/ABtest/duritaco/T41.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D7_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D7_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D7_vc' style='display:none'>
+                    <source src="audio_samples/ABtest/vc/T41.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D7_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D7_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D7_augloss' style='display:none'>
+                    <source src="audio_samples/ABtest/augloss/T41.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D7_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D7_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>"三次嘅手術,佢每日都為我祈禱"<br>("Throughout the three surgeries, he prayed for me every day.")<br>"saam1 ci3 ge3 sau2 seot6 sil keoi5 mui5 jat6 dou1 wai4 ngo5 kei4 tou2"
+            </td>
+            <td><audio id='D8_duritaco' style='display:none'>
+                    <source src="audio_samples/ABtest/duritaco/T43.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D8_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D8_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D8_vc' style='display:none'>
+                    <source src="audio_samples/ABtest/vc/T43.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D8_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D8_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D8_augloss' style='display:none'>
+                    <source src="audio_samples/ABtest/augloss/T43.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D8_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D8_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>"可能你都同我一樣遇到人生好多唔同嘅困難,但聖經喺咁講嘅"<br>("Perhaps you, like me, have encountered many different difficulties in life, but the Bible says")<br>"ho2 nang4 nei5 dou1 tung4 ngo5 jat1 joeng6 jyu6 dou3 jan4 saang1 hou2 do1 m4 tung4 ge3 kwan3 naan4 sil,daan6 sing3 ging1
+            hai2 gam3 gong2 ge3"
+            </td>
+            <td><audio id='D9_duritaco' style='display:none'>
+                    <source src="audio_samples/ABtest/duritaco/T48T49.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D9_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D9_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D9_vc' style='display:none'>
+                    <source src="audio_samples/ABtest/vc/T48T49.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D9_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D9_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D9_augloss' style='display:none'>
+                    <source src="audio_samples/ABtest/augloss/T48T49.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D9_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D9_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>"活得喜樂、積極，心靈滿足，完全唔似病人"<br>("Live happily, actively, and contentedly, not like a patient at all")<br>"wut6 dak1 hei2 lok6 sil zik1 gik6 sil sam1 ling4 mun5 zuk1 sil jyun4 cyun4 m4 ci5 beng6 jan4"
+            </td>
+            <td><audio id='D10_duritaco' style='display:none'>
+                    <source src="audio_samples/ABtest/duritaco/T69.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D10_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D10_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D10_vc' style='display:none'>
+                    <source src="audio_samples/ABtest/vc/T69.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D10_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D10_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D10_augloss' style='display:none'>
+                    <source src="audio_samples/ABtest/augloss/T69.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D10_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D10_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>"願你今日都可以得著呢份無價嘅福樂"<br>("May you receive this priceless happiness today")<br>"jyun6 nei5 gam1 jat6 dou1 ho2 ji5 dak1 zoek6 ne1 fan6 mou4 gaa3 ge3 fuk1 lok6"
+            </td>
+            <td><audio id='D11_duritaco' style='display:none'>
+                    <source src="audio_samples/ABtest/duritaco/T74.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D11_duritaco').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D11_duritaco'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D11_vc' style='display:none'>
+                    <source src="audio_samples/ABtest/vc/T74.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D11_vc').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D11_vc'))">Stop</button>
+                </div>
+            </td>
+            <td><audio id='D11_augloss' style='display:none'>
+                    <source src="audio_samples/ABtest/augloss/T74.wav" type="audio/wav">
+                </audio>
+                <div>
+                    <button onclick="stopAllAudios(); document.getElementById('D11_augloss').play()">Play</button>
+                    <button onclick="stopAudio(document.getElementById('D11_augloss'))">Stop</button>
+                </div>
+            </td>
+        </tr>
+
+    
+    </table>
 
 </body>
 
